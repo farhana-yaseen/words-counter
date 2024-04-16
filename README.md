@@ -1,1 +1,1 @@
-# words-counting
+# words-counter

@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
 let condition = true;
@@ -8,6 +9,7 @@ while (condition) {
         type: "input",
         message: "Enter sentences for word counting: "
     });
+    //use trim for delete white space and split for words convert in array
     const word = answer.sentence.trim().split(" ");
     console.log(word);
     console.log(chalk.bgBlue.bold(`\n Total word count is : ${word.length} \n`));
